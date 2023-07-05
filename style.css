@@ -1,0 +1,225 @@
+* {
+  color: white;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: rgba(32, 33, 36, 1);
+}
+.google-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+
+  border-radius: 50%;
+  border: 8px solid transparent;
+  transition: border 0.4s ease-out;
+}
+.google-icon:hover {
+  border: 8px solid rgb(67, 67, 70);
+  background-color: rgb(67, 67, 70);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-items: center;
+  padding: 15px;
+}
+
+header div a {
+  color: rgb(185, 185, 185);
+}
+
+header div,
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.profile-img {
+  border-radius: 50%;
+  cursor: pointer;
+}
+.search-bar {
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.search-bar input {
+  width: 35rem;
+  height: 2rem;
+  background-color: transparent;
+  border: none;
+}
+.googlelogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-icon {
+  margin-top: 0.3rem;
+  margin-right: 1rem;
+  width: 20px;
+  height: 20px;
+  color: rgb(106, 106, 106);
+}
+.goxjub,
+.Gdd5U {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+main {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.search-bar-border {
+  display: flex;
+  border: solid 1px rgb(106, 106, 106);
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.btns-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.btns-div a,
+.btns-div button {
+  font-size: 1.1rem;
+  background-color: #303134;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: solid 1px transparent;
+}
+
+.btn {
+  position: relative;
+  width: 160px;
+  height: 42px;
+  margin: 24px 0;
+  overflow: hidden;
+  transition: all ease-in-out 400ms;
+}
+.btn:hover {
+  width: 230px;
+}
+.btn.test-completed::after,
+.btn.test-completed::before {
+  content: "Auf gut Glück!";
+  position: absolute;
+  text-align: center;
+  right: 0;
+  top: 0;
+  line-height: 2.2;
+  width: 100%;
+  transition: all ease-in-out 500ms;
+}
+@keyframes casinoEffect {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-10px);
+  }
+  20% {
+    transform: translateY(40px);
+  }
+  30% {
+    transform: translate(5px);
+  }
+  40% {
+    transform: translateY(-36px);
+  }
+  50% {
+    transform: translateY(36px);
+  }
+  60% {
+    transform: translateY(-36px);
+  }
+  70% {
+    transform: translateY(36px);
+  }
+  80% {
+    transform: translateY(-36px);
+  }
+  90% {
+    transform: translateY(36px);
+  }
+  100% {
+    transform: translateY(-36px);
+  }
+}
+.btn.test-completed:hover:after {
+  top: -40px;
+  animation: casinoEffect 400ms;
+}
+
+.btn.test-completed::before {
+  top: 36px;
+}
+
+.btn.test-completed:hover:before {
+  animation: casinoEffect 300ms;
+  top: 0;
+}
+
+.btns-div a:hover,
+.btns-div button:hover {
+  border: solid 1px #e8eaed;
+}
+
+footer {
+  margin-top: 10rem;
+  background-color: #181818;
+  height: 17rem;
+}
+.country {
+  padding: 1rem 0rem;
+  padding-left: 3rem;
+  color: rgb(171, 171, 171);
+  background-color: #181818;
+  border-bottom: solid 1px rgb(66, 66, 66);
+}
+
+.google-info,
+.co2-info {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.google-info {
+  gap: 2rem;
+}
+.google-info a,
+.co2-info a {
+  color: rgb(171, 171, 171);
+}
+
+.google-info a:hover,
+.co2-info a:hover {
+  text-decoration: underline;
+}
+.co2-img {
+  width: 15px;
+  height: 15px;
+  margin-right: 0.4rem;
+}
